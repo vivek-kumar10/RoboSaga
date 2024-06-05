@@ -1,0 +1,127 @@
+.container my-5 h1{
+ font-size: 8rem;
+}
+body{
+  background-color: #44b09e;
+background-image: url(./imgg/bg.webp);
+background-size: cover
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.animated-heading{
+  font-family: "Oswald", sans-serif;
+  font-size: 8rem;
+  color: aliceblue;
+}
+#carouselExampleIndicators{
+width: 80%;
+padding: 10px;
+
+}
+.coro-img{
+  display: flex;
+  justify-content: center; 
+  align-items: center ;
+}
+#show-img{
+  width: 100%;
+  height: 100%;
+}
+.navbar{
+  background-color: #030506	;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  width: 100%;
+}
+.nav-list{
+  list-style: none;
+}
+.nav-list .items{
+ display: inline-block;
+ padding: 20px 10px;
+}
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a:hover{
+  color: aqua;
+  
+}
+.logo{
+  color: #fff;
+}
+.logo img{
+  height: 60px;
+  width: 60px;
+  margin-left: 9px;
+}
+.menu-line{
+  width: 28px;
+  height: 5px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  margin-top: 7px;
+  display: none;
+}
+@media all and (max-width:480px){
+  .navbar{
+    flex-direction: column;
+    position: relative;
+
+  }
+  .menu{
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  .menu-line{
+    display: block;
+  }
+  .nav-list{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+  }
+  .nav-list .items{
+    display: block;
+    border-top: .2px solid white;
+  }
+  .logo{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+  }
+   .nav-list.active{
+    display: block;
+  }
+}
+.animated-heading {
+  animation-name: slideInFromLeft; 
+  animation-duration: 1.5s; 
+  animation-delay: .70s;
+  animation-fill-mode: both; 
+}
+
+@keyframes slideInFromLeft {
+  from {
+      transform: translateX(-100%); 
+      opacity: 0; 
+  }
+  to {
+      transform: translateX(0); 
+      opacity: 1;
+  }
+}
+
+
